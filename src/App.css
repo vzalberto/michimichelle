@@ -21,20 +21,21 @@
 }
 
 #michelle {
-    border-radius: 5px;
+    border-radius: 7px;
+    height: 100%;
 }
-
 
 .emoji {
+    cursor: help;
     font-size: 5em;
+
 }
 
-p, #michelle {
+#michelle {
     cursor: grab;
 }
 
-
-p:active, #michelle:Active {
+#michelle:Active {
     cursor: grabbing;
 }
 

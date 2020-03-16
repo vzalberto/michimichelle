@@ -13,22 +13,23 @@ export default class App extends React.Component {
         return (
             <div>
                 <p id="lalluvia">🌧🌧🌧🌧🌧🌧🌧</p>
-                <img id="michelle" src="/bajoLaLluvia.gif" onClick={this.miau} />
+                {/* <img  src="/bajoLaLluvia.gif" onClick={this.miau} /> */}
+                <video autoPlay="true" loop muted="true" id="michelle">
+                    <source src="bajoLaLluvia.webm" onClick={this.miau}></source>
+                </video>
             </div>
         )
     }
 
     laVidaEsAsi = () => {
         return (
-            <p 
-                className="emoji" 
-                onClick={this.miau}>
-                    <span 
+                <span 
                     role='img'
-                        aria-label='cloud emoji nube'>
-                            ☁️
-                    </span>
-            </p>
+                    className="emoji" 
+                    onClick={this.miau}
+                    aria-label='cloud emoji nube'>
+                        ☁️
+                </span>
         )
     }
 
