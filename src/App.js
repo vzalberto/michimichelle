@@ -13,7 +13,7 @@ export default class App extends React.Component {
         return (
             <div>
                 <p id="lalluvia">🌧🌧🌧🌧🌧🌧🌧</p>
-                <img  src="/bajoLaLluvia.gif" onClick={this.miau} />
+                <img id="michelle" src="/bajoLaLluvia.gif" onClick={this.miau} />
                 {/* <video autoPlay="true" loop muted="true" id="michelle" onClick={this.miau}>
                     <source src="bajoLaLluvia.webm" ></source>
                 </video> */}
