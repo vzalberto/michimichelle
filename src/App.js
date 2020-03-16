@@ -14,8 +14,8 @@ export default class App extends React.Component {
             <div>
                 <p id="lalluvia">🌧🌧🌧🌧🌧🌧🌧</p>
                 {/* <img  src="/bajoLaLluvia.gif" onClick={this.miau} /> */}
-                <video autoPlay="true" loop muted="true" id="michelle">
-                    <source src="bajoLaLluvia.webm" onClick={this.miau}></source>
+                <video autoPlay="true" loop muted="true" id="michelle" onClick={this.miau}>
+                    <source src="bajoLaLluvia.webm" ></source>
                 </video>
             </div>
         )
