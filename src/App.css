@@ -16,6 +16,12 @@
     color: rgb(108, 9, 9);
 }
 
+pre {
+    line-height: 1.6em;
+    letter-spacing: initial;
+    color: #bbb;
+}
+
 #lalluvia {
     display: block;
 }

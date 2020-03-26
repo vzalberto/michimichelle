@@ -32,31 +32,61 @@ export default class App extends React.Component {
                         aria-label='cloud emoji nube'>
                             ☁️
                     </span>
-                    <span 
-                        role='img'
-                        className="emoji" 
-                        onClick={this.miauTriste}
-                        aria-label='luna moon emoji nueva new'>
-                        🌑
-                    </span>
                 </div>
         )
     }
 
-    ovulando = () => {
+    dimeQueMeQuieres = () => {
         return (
             <span 
                 role='img'
                 className="emoji" 
                 onClick={this.miauTriste}
-                aria-label='miau esta triste emoji'>
+                aria-label='luna moon emoji nueva new'>
                 😿
             </span>
         )
     }
 
+    dimeloDeNuevo = () => {
+        
+        return (
+            <div>
+                <pre
+                    className="clariceLispector"
+                >       
+{`
+pone su cachete junto al mío
+y hace ruiditos suaves 
+y expresivos
+y cuando me desvelo 
+o estoy muy despierta
+se tira boca abajo 
+con sus patitas al aire
+y me mira 
+con sus fervientes ojos negros
+
+dime que me quieres, dice
+dímelo de nuevo
+¿podría haber
+un arreglo más dulce?
+una y otra vez
+él me preguntará
+y yo le contestaré`}
+                </pre>
+                <span 
+                    role='img'
+                    className="emoji" 
+                    onClick={this.miauTriste}
+                    aria-label='pone su cachete junto al mio'>
+                    😻
+                </span>
+            </div>
+            )
+        }
+
     miauTriste = () => {
-        this.setState({celo: !this.state.celo})
+        this.setState({clariceLispector: !this.state.clariceLispector})
     }
 
     miau = () => {
@@ -76,17 +106,10 @@ export default class App extends React.Component {
                 <header className="App-header">
 
                     {
-                        !this.state.lluvia && 
-                        this.laVidaEsAsi()
-                            //this.yaLoVes()
-                    }
-{/*                     
-                                   
-                    } */}
-                    
-                    {
-                        this.state.celo && 
-                            this.ovulando()
+                        this.state.clariceLispector ? 
+                            this.dimeloDeNuevo()
+                            :
+                            this.dimeQueMeQuieres()
                     }
                    
                 </header>
