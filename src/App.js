@@ -5,7 +5,8 @@ export default class App extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            lluvia : false
+            lluvia : false,
+            celo: false,
         }
     }
 
@@ -23,14 +24,39 @@ export default class App extends React.Component {
 
     laVidaEsAsi = () => {
         return (
-                <span 
-                    role='img'
-                    className="emoji" 
-                    onClick={this.miau}
-                    aria-label='cloud emoji nube'>
-                        ☁️
-                </span>
+            <div>
+                    <span 
+                        role='img'
+                        className="emoji" 
+                        onClick={this.miau}
+                        aria-label='cloud emoji nube'>
+                            ☁️
+                    </span>
+                    <span 
+                        role='img'
+                        className="emoji" 
+                        onClick={this.miauTriste}
+                        aria-label='luna moon emoji nueva new'>
+                        🌑
+                    </span>
+                </div>
         )
+    }
+
+    ovulando = () => {
+        return (
+            <span 
+                role='img'
+                className="emoji" 
+                onClick={this.miauTriste}
+                aria-label='miau esta triste emoji'>
+                😿
+            </span>
+        )
+    }
+
+    miauTriste = () => {
+        this.setState({celo: !this.state.celo})
     }
 
     miau = () => {
@@ -50,10 +76,17 @@ export default class App extends React.Component {
                 <header className="App-header">
 
                     {
-                        this.state.lluvia ? 
-                            this.yaLoVes()
-                            : 
-                            this.laVidaEsAsi()       
+                        !this.state.lluvia && 
+                        this.laVidaEsAsi()
+                            //this.yaLoVes()
+                    }
+{/*                     
+                                   
+                    } */}
+                    
+                    {
+                        this.state.celo && 
+                            this.ovulando()
                     }
                    
                 </header>
