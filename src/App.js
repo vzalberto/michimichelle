@@ -53,7 +53,7 @@ export default class App extends React.Component {
         return (
             <div>
                 <pre
-                    className="clariceLispector"
+                    className="maryOliver"
                 >       
 {`
 pone su cachete junto al mío
@@ -86,7 +86,7 @@ y yo le contestaré`}
         }
 
     miauTriste = () => {
-        this.setState({clariceLispector: !this.state.clariceLispector})
+        this.setState({maryOliver: !this.state.maryOliver})
     }
 
     miau = () => {
@@ -106,7 +106,7 @@ y yo le contestaré`}
                 <header className="App-header">
 
                     {
-                        this.state.clariceLispector ? 
+                        this.state.maryOliver ? 
                             this.dimeloDeNuevo()
                             :
                             this.dimeQueMeQuieres()
