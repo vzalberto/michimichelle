@@ -7,6 +7,8 @@ export default class App extends React.Component {
         this.state = {
             lluvia : false,
             celo: false,
+            pensamiento: false,
+            morado: '#ff00ff',
         }
     }
 
@@ -99,23 +101,68 @@ y yo le contestaré`}
         }
         this.setState({lluvia: !this.state.lluvia})
     }
+
+    rand = () => Math.random() * 256
+
+    atuncito = () => {
+      const rojo = Math.round(this.rand()).toString(16);
+      const azul = Math.round(this.rand()).toString(16);
+      const propuesta = `#${rojo}00${azul}`;
+
+      this.setState({morado: propuesta}, ()=>{console.log(this.state.morado)})
+    };
+
+    soloPienso = () => {
+      this.setState({pensamiento: !this.state.pensamiento});
+    };
     
     render () {
+      if (this.state.pensamiento) {
         return (
-            <div className="App">
-                <header className="App-header">
-
-                    {
-                        this.state.maryOliver ? 
-                            this.dimeloDeNuevo()
-                            :
-                            this.dimeQueMeQuieres()
-                    }
-                   
-                </header>
-
-                <audio ref={ref => {this.rocioDurcal = ref}} src="./gata_lluvia.mp3" />
+            <div
+              id="doItForHer"
+              onClick={this.soloPienso}>
+                &nbsp;
             </div>
         );
+      }
+      else {
+        return (
+            <div className="App" style={{backgroundColor: this.state.morado}}>
+                  <header className="App-header">
+                  {
+                    !this.state.pensamiento && 
+                      <span
+                        role='img'
+                        className="emoji" 
+                        onClick={this.soloPienso}
+                        aria-label='cerebro'>
+                        🧠
+                      </span>
+                  }
+
+                  {
+                      this.state.maryOliver ? 
+                          this.dimeloDeNuevo()
+                          :
+                          this.dimeQueMeQuieres()
+                  }
+
+                  {
+                    
+                    <span 
+                      role='img'
+                      className="emoji" 
+                      onClick={this.atuncito}
+                      aria-label='atuncito'>
+                      🐟
+                    </span>
+                  }
+                 
+              </header>
+              <audio ref={ref => {this.rocioDurcal = ref}} src="./gata_lluvia.mp3" />
+            </div>
+        );
+      };
     }
 }
