@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React from 'react';
 import './App.css';
 
 export default class App extends React.Component {
@@ -16,7 +16,7 @@ export default class App extends React.Component {
         return (
             <div>
                 <p id="lalluvia">🌧🌧🌧🌧🌧🌧🌧</p>
-                <img id="michelle" src="/bajoLaLluvia.gif" onClick={this.miau} />
+                <img alt="felina" id="michelle" src="/bajoLaLluvia.gif" onClick={this.miau} />
                 {/* <video autoPlay="true" loop muted="true" id="michelle" onClick={this.miau}>
                     <source src="bajoLaLluvia.webm" ></source>
                 </video> */}
