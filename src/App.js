@@ -130,6 +130,53 @@ y yo le contestaré`}
                 &nbsp;
             </div>
         );
+      } 
+      else if (this.state.pastillas) {
+        return (
+          <div className="App" onClick={this.cualesPastillas} style={{backgroundColor: this.state.morado}}>
+            <div>
+              <h1>
+                Miércoles 9M
+              </h1>
+              <div className={"medicina"}>
+                <div>Omeprazol</div>
+                <div className="dosis">
+                  <span>✓</span>
+                </div>
+              </div>
+              <div className={"medicina"}>
+                <div>Amoxiclav</div>
+                <div className="dosis">
+                  <span>✓</span>
+                  <span>❍</span>
+                </div>
+              </div>
+              <div className={"medicina"}>
+                <div>Mucosolvan (doble felina)</div>
+                <div className="dosis">
+                  <span>❍</span>
+                  <span>❍</span>
+                  <span>❍</span>
+                </div>
+              </div>
+              <div className={"medicina"}>
+                <div>Nutribound</div>
+                <div className="dosis">
+                  <span>✓</span>
+                  <span>❍</span>
+                  <span>❍</span>
+                  <span>❍</span>
+                </div>
+              </div>
+              <div className={"medicina"}>
+                <div>Guayaneumol (doble felina)</div>
+                <div className="dosis">
+                  <span>❍</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )
       }
       else {
         return (

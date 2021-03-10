@@ -71,3 +71,7 @@ pre {
     transform: rotate(360deg);
   }
 }
+
+.dosis {
+  margin-bottom: 16px;
+}
