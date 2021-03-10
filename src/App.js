@@ -8,6 +8,7 @@ export default class App extends React.Component {
             lluvia : false,
             celo: false,
             pensamiento: false,
+            pastillas: false,
             morado: '#ff00ff',
         }
     }
@@ -85,7 +86,7 @@ y yo le contestaré`}
                 </span>
             </div>
             )
-        }
+    }
 
     miauTriste = () => {
         this.setState({maryOliver: !this.state.maryOliver})
@@ -115,7 +116,11 @@ y yo le contestaré`}
     soloPienso = () => {
       this.setState({pensamiento: !this.state.pensamiento});
     };
-    
+
+    cualesPastillas = () => {
+      this.setState({pastillas: !this.state.pastillas});
+    };
+
     render () {
       if (this.state.pensamiento) {
         return (
@@ -130,6 +135,7 @@ y yo le contestaré`}
         return (
             <div className="App" style={{backgroundColor: this.state.morado}}>
                   <header className="App-header">
+
                   {
                     !this.state.pensamiento && 
                       <span
@@ -157,6 +163,17 @@ y yo le contestaré`}
                       aria-label='atuncito'>
                       🐟
                     </span>
+                  }
+
+                  {
+                    !this.state.medicinas &&
+                      <span
+                        role='img'
+                        className='emoji'
+                        onClick={this.cualesPastillas}
+                        aria-label='pastillas'>
+                          💊
+                      </span>
                   }
                  
               </header>
