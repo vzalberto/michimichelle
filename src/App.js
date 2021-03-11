@@ -217,6 +217,14 @@ y yo le contestaré`}
                 </div>
               </div>
             </div>
+
+            <span
+              role='img'
+              className="emoji backButton" 
+              onClick={this.cualesPastillas}
+              aria-label=''>
+                😌
+            </span>
           </div>
         )
       }

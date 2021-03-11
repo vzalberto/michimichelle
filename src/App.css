@@ -73,6 +73,7 @@ pre {
 }
 
 .dosis {
+  cursor: pointer;
   margin-bottom: 16px;
 }
 
@@ -80,7 +81,14 @@ pre {
   color: #104547;
 }
 
+.backButton {
+  cursor: w-resize;
+}
 
 .lasDelDia {
   color: #E7ECEF;
+}
+
+h1 {
+  margin: 0;
 }
