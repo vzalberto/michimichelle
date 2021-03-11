@@ -155,7 +155,7 @@ y yo le contestaré`}
             <div>Mucosolvan (doble felina)</div>
             <div className="dosis">
               <span>✓</span>
-              <span>❍</span>
+              <span data='2:00 PM'>✓</span>
               <span>❍</span>
             </div>
           </div>
@@ -163,7 +163,7 @@ y yo le contestaré`}
             <div>Nutribound</div>
             <div className="dosis">
               <span>✓</span>
-              <span>✓</span>
+              <span data='1:46 PM'>✓</span>
               <span>❍</span>
               <span>❍</span>
             </div>
