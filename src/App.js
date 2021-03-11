@@ -171,7 +171,7 @@ y yo le contestaré`}
               <div className={"medicina"}>
                 <div>Guayaneumol (doble felina)</div>
                 <div className="dosis">
-                  <span>❍</span>
+                  <span>✓</span>
                 </div>
               </div>
             </div>
