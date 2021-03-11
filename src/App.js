@@ -133,10 +133,52 @@ y yo le contestaré`}
       } 
       else if (this.state.pastillas) {
         return (
-          <div className="App" onClick={this.cualesPastillas} style={{backgroundColor: this.state.morado}}>
-            <div>
+          <div className="App" onClick={this.cualesPastillas} style={{backgroundColor: '#3E0940'}}>
+            <div className="lasDelDia">
+          <h1 style={{color:'#df1f89'}}>
+            Jueves 11M
+          </h1>
+          <div className={"medicina"}>
+            <div>Omeprazol</div>
+            <div className="dosis">
+              <span>❍</span>
+            </div>
+          </div>
+          <div className={"medicina"}>
+            <div>Amoxiclav</div>
+            <div className="dosis">
+              <span>❍</span>
+              <span>❍</span>
+            </div>
+          </div>
+          <div className={"medicina"}>
+            <div>Mucosolvan (doble felina)</div>
+            <div className="dosis">
+              <span>❍</span>
+              <span>❍</span>
+              <span>❍</span>
+            </div>
+          </div>
+          <div className={"medicina"}>
+            <div>Nutribound</div>
+            <div className="dosis">
+              <span>❍</span>
+              <span>❍</span>
+              <span>❍</span>
+              <span>❍</span>
+            </div>
+          </div>
+          <div className={"medicina"}>
+            <div>Guayaneumol (doble felina)</div>
+            <div className="dosis">
+              <span>❍</span>
+            </div>
+          </div>
+        </div>
+
+            <div className="lasDeAyer">
               <h1>
-                Miércoles 9M
+                Miércoles 10M
               </h1>
               <div className={"medicina"}>
                 <div>Omeprazol</div>
@@ -148,13 +190,13 @@ y yo le contestaré`}
                 <div>Amoxiclav</div>
                 <div className="dosis">
                   <span>✓</span>
-                  <span>❍</span>
+                  <span>✓</span>
                 </div>
               </div>
               <div className={"medicina"}>
                 <div>Mucosolvan (doble felina)</div>
                 <div className="dosis">
-                  <span>❍</span>
+                  <span>✓</span>
                   <span>❍</span>
                   <span>❍</span>
                 </div>
