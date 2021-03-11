@@ -147,14 +147,14 @@ y yo le contestaré`}
           <div className={"medicina"}>
             <div>Amoxiclav</div>
             <div className="dosis">
-              <span>❍</span>
+              <span>✓</span>
               <span>❍</span>
             </div>
           </div>
           <div className={"medicina"}>
             <div>Mucosolvan (doble felina)</div>
             <div className="dosis">
-              <span>❍</span>
+              <span>✓</span>
               <span>❍</span>
               <span>❍</span>
             </div>
