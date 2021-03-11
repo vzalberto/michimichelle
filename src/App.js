@@ -163,7 +163,7 @@ y yo le contestaré`}
                 <div>Nutribound</div>
                 <div className="dosis">
                   <span>✓</span>
-                  <span>❍</span>
+                  <span>✓</span>
                   <span>❍</span>
                   <span>❍</span>
                 </div>
