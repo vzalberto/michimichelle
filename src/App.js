@@ -141,7 +141,7 @@ y yo le contestaré`}
           <div className={"medicina"}>
             <div>Omeprazol</div>
             <div className="dosis">
-              <span>❍</span>
+              <span>✓</span>
             </div>
           </div>
           <div className={"medicina"}>
@@ -162,7 +162,7 @@ y yo le contestaré`}
           <div className={"medicina"}>
             <div>Nutribound</div>
             <div className="dosis">
-              <span>❍</span>
+              <span>✓</span>
               <span>❍</span>
               <span>❍</span>
               <span>❍</span>
