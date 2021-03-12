@@ -133,7 +133,7 @@ y yo le contestaré`}
       } 
       else if (this.state.pastillas) {
         const ahora = Date.now()
-        const pendientes = [
+        const jueves = [
           {
             nombre: 'Omeprazol',
             llevamos: 1,
@@ -142,14 +142,14 @@ y yo le contestaré`}
           },
           {
             nombre: 'Amoxiclav',
-            llevamos: 1,
-            faltan: 1,
+            llevamos: 2,
+            faltan: 0,
             a_que_hora: ahora,
           },
           {
             nombre: 'Mucosolvan (doble felina)',
-            llevamos: 2,
-            faltan: 1,
+            llevamos: 3,
+            faltan: 0,
             a_que_hora: ahora,
           },
           {
@@ -160,73 +160,73 @@ y yo le contestaré`}
           },
           {
             nombre: 'Guayaneumol (doble felina)',
+            llevamos: 1,
+            faltan: 0,
+            a_que_hora: ahora,
+          },
+        ];
+        const viernes = [
+          {
+            nombre: 'Omeprazol',
             llevamos: 0,
             faltan: 1,
             a_que_hora: ahora,
           },
-        ]
+          {
+            nombre: 'Amoxiclav',
+            llevamos: 0,
+            faltan: 2,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Mucosolvan (doble felina)',
+            llevamos: 0,
+            faltan: 3,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Nutribound',
+            llevamos: 0,
+            faltan: 4,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Guayaneumol (doble felina)',
+            llevamos: 0,
+            faltan: 1,
+            a_que_hora: ahora,
+          },
+        ];
+        const renderizaDia = (medicina) => {
+          return (
+            <div className={"medicina"}>
+              <div>{medicina.nombre}</div>
+              <div className="dosis">
+                <span>
+                  {("✓").repeat(medicina.llevamos)}
+                </span>
+                <span>
+                  {("❍").repeat(medicina.faltan)}
+                </span>
+              </div>
+            </div>
+          );
+        }
         return (
           <div className="App" onClick={this.cualesPastillas} style={{backgroundColor: '#3E0940'}}>
             <div className="lasDelDia">
-          <h1 style={{color:'#df1f89'}}>
-            Jueves 11M
-          </h1>
-          <div className={"medicina"}>
-            <div>{pendientes[0].nombre}</div>
-            <div className="dosis">
-              <span>
-                {("✓").repeat(pendientes[0].llevamos)}
-              </span>
-              <span>
-                {("✓").repeat(pendientes[0].faltan)}
-              </span>
+              <h1 style={{color:'#df1f89'}}>
+                Viernes 12M
+              </h1>
+              {viernes.map(e=>renderizaDia(e))}
             </div>
-          </div>
-          <div className={"medicina"}>
-            <div>Amoxiclav</div>
-            <div className="dosis">
-              <span>
-                {("✓").repeat(pendientes[1].llevamos)}
-              </span>
-              <span>
-                {("❍").repeat(pendientes[1].faltan)}
-              </span>
+
+            <div className="lasDeAyer">
+              <h1>
+                Jueves 11M
+              </h1>
+              {jueves.map(e=>renderizaDia(e))}
             </div>
-          </div>
-          <div className={"medicina"}>
-            <div>Mucosolvan (doble felina)</div>
-            <div className="dosis">
-              <span>
-                {("✓").repeat(pendientes[2].llevamos)}
-              </span>
-              <span>
-                {("❍").repeat(pendientes[2].faltan)}
-              </span>
-            </div>
-          </div>
-          <div className={"medicina"}>
-            <div>Nutribound</div>
-            <div className="dosis">
-              <span>
-                {("✓").repeat(pendientes[3].llevamos)}
-              </span>
-              <span>
-                {("❍").repeat(pendientes[3].faltan)}
-              </span>
-            </div>
-          </div>
-          <div className={"medicina"}>
-            <div>Guayaneumol (doble felina)</div>
-            <div className="dosis">
-              <span>
-                {("✓").repeat(pendientes[4].llevamos)}
-              </span>
-              <span>
-                {("❍").repeat(pendientes[4].faltan)}
-              </span>
-            </div>
-          </div>
-        </div>
 
             <div className="lasDeAyer">
               <h1>
