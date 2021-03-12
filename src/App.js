@@ -180,8 +180,8 @@ y yo le contestaré`}
           },
           {
             nombre: 'Mucosolvan (doble felina)',
-            llevamos: 1,
-            faltan: 2,
+            llevamos: 2,
+            faltan: 1,
             a_que_hora: ahora,
           },
           {
