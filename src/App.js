@@ -132,6 +132,39 @@ y yo le contestaré`}
         );
       } 
       else if (this.state.pastillas) {
+        const ahora = Date.now()
+        const pendientes = [
+          {
+            nombre: 'Omeprazol',
+            llevamos: 1,
+            faltan: 0,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Amoxiclav',
+            llevamos: 1,
+            faltan: 1,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Mucosolvan (doble felina)',
+            llevamos: 2,
+            faltan: 1,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Nutribound',
+            llevamos: 3,
+            faltan: 1,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Guayaneumol (doble felina)',
+            llevamos: 0,
+            faltan: 1,
+            a_que_hora: ahora,
+          },
+        ]
         return (
           <div className="App" onClick={this.cualesPastillas} style={{backgroundColor: '#3E0940'}}>
             <div className="lasDelDia">
@@ -139,39 +172,58 @@ y yo le contestaré`}
             Jueves 11M
           </h1>
           <div className={"medicina"}>
-            <div>Omeprazol</div>
+            <div>{pendientes[0].nombre}</div>
             <div className="dosis">
-              <span>✓</span>
+              <span>
+                {("✓").repeat(pendientes[0].llevamos)}
+              </span>
+              <span>
+                {("✓").repeat(pendientes[0].faltan)}
+              </span>
             </div>
           </div>
           <div className={"medicina"}>
             <div>Amoxiclav</div>
             <div className="dosis">
-              <span>✓</span>
-              <span>❍</span>
+              <span>
+                {("✓").repeat(pendientes[1].llevamos)}
+              </span>
+              <span>
+                {("❍").repeat(pendientes[1].faltan)}
+              </span>
             </div>
           </div>
           <div className={"medicina"}>
             <div>Mucosolvan (doble felina)</div>
             <div className="dosis">
-              <span>✓</span>
-              <span data='2:00 PM'>✓</span>
-              <span>❍</span>
+              <span>
+                {("✓").repeat(pendientes[2].llevamos)}
+              </span>
+              <span>
+                {("❍").repeat(pendientes[2].faltan)}
+              </span>
             </div>
           </div>
           <div className={"medicina"}>
             <div>Nutribound</div>
             <div className="dosis">
-              <span>✓</span>
-              <span data='1:46 PM'>✓</span>
-              <span>❍</span>
-              <span>❍</span>
+              <span>
+                {("✓").repeat(pendientes[3].llevamos)}
+              </span>
+              <span>
+                {("❍").repeat(pendientes[3].faltan)}
+              </span>
             </div>
           </div>
           <div className={"medicina"}>
             <div>Guayaneumol (doble felina)</div>
             <div className="dosis">
-              <span>❍</span>
+              <span>
+                {("✓").repeat(pendientes[4].llevamos)}
+              </span>
+              <span>
+                {("❍").repeat(pendientes[4].faltan)}
+              </span>
             </div>
           </div>
         </div>
