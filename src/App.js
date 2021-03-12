@@ -154,8 +154,8 @@ y yo le contestaré`}
           },
           {
             nombre: 'Nutribound',
-            llevamos: 3,
-            faltan: 1,
+            llevamos: 4,
+            faltan: 0,
             a_que_hora: ahora,
           },
           {
