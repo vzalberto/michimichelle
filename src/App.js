@@ -168,14 +168,14 @@ y yo le contestaré`}
         const viernes = [
           {
             nombre: 'Omeprazol',
-            llevamos: 0,
-            faltan: 1,
+            llevamos: 1,
+            faltan: 0,
             a_que_hora: ahora,
           },
           {
             nombre: 'Amoxiclav',
-            llevamos: 0,
-            faltan: 2,
+            llevamos: 1,
+            faltan: 1,
             a_que_hora: ahora,
           },
           {
