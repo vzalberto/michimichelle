@@ -201,8 +201,8 @@ y yo le contestaré`}
         const sabado = [
           {
             nombre: 'Omeprazol',
-            llevamos: 0,
-            faltan: 1,
+            llevamos: 1,
+            faltan: 0,
             a_que_hora: ahora,
           },
           {
@@ -219,8 +219,8 @@ y yo le contestaré`}
           },
           {
             nombre: 'Nutribound',
-            llevamos: 0,
-            faltan: 4,
+            llevamos: 1,
+            faltan: 3,
             a_que_hora: ahora,
           },
           {
