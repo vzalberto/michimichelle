@@ -335,6 +335,9 @@ y yo le contestaré`}
               aria-label=''>
                 😌
             </span>
+            <p>
+              ¡Lo estás haciendo muy bien!
+            </p>
           </div>
         )
       }

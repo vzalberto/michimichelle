@@ -89,6 +89,10 @@ pre {
   color: #E7ECEF;
 }
 
-h1 {
+h1 p{
   margin: 0;
+}
+
+p {
+  color: #E7ECEF;
 }
