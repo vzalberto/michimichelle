@@ -87,12 +87,15 @@ pre {
 
 .lasDelDia {
   color: #E7ECEF;
+  padding-top: 36px;
 }
 
-h1 p{
+h1{
   margin: 0;
 }
 
 p {
+  margin: 0;
   color: #E7ECEF;
+  padding-bottom: 42px;
 }
