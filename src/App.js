@@ -132,7 +132,6 @@ y yo le contestaré`}
         );
       } 
       else if (this.state.pastillas) {
-        {/* Datos */}
         const ahora = Date.now();
         const jueves = [
           {
@@ -231,7 +230,6 @@ y yo le contestaré`}
           },
         ];
 
-        {/* Presentación de datos */}
         const renderizaDia = (medicina) => {
           return (
             <div className={"medicina"}>
@@ -247,10 +245,6 @@ y yo le contestaré`}
             </div>
           );
         };
-
-        {/* Obtención de datos? */ }
-
-        {/* Arreglo de datos */}
         const medicinas = [
           {lista: sabado, fecha: 'Sabado 13M'}, 
           {lista: viernes, fecha: 'Viernes 12M'},
@@ -260,9 +254,8 @@ y yo le contestaré`}
         return (
           <div className="App"  style={{backgroundColor: '#3E0940'}}>
 
-            {/* HIGHER ORDER COMPONENT */}
             {medicinas.map((dia, index) => {
-              if (index == 0){
+              if (index === 0){
                 return (
                   <div className="lasDelDia">
                     <h1 style={{color:'#df1f89'}}>
