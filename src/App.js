@@ -3,14 +3,14 @@ import './App.css';
 
 export default class App extends React.Component {
     constructor(props){
-        super(props);
-        this.state = {
-            lluvia : false,
-            celo: false,
-            pensamiento: false,
-            pastillas: false,
-            morado: '#ff00ff',
-        }
+      super(props);
+      this.state = {
+          lluvia : false,
+          celo: false,
+          pensamiento: false,
+          pastillas: false,
+          morado: '#ff00ff',
+      }
     }
 
     yaLoVes = () => {
@@ -224,7 +224,7 @@ y yo le contestaré`}
             a_que_hora: ahora,
           },
           {
-            nombre: 'Guayaneumol (doble felina)',
+            nombre: 'Último Guayaneumol (doble felina)',
             llevamos: 0,
             faltan: 1,
             a_que_hora: ahora,
@@ -258,7 +258,7 @@ y yo le contestaré`}
         ];
 
         return (
-          <div className="App" onClick={this.cualesPastillas} style={{backgroundColor: '#3E0940'}}>
+          <div className="App"  style={{backgroundColor: '#3E0940'}}>
 
             {/* HIGHER ORDER COMPONENT */}
             {medicinas.map((dia, index) => {
@@ -341,7 +341,7 @@ y yo le contestaré`}
       else {
         return (
             <div className="App" style={{backgroundColor: this.state.morado}}>
-                  <header className="App-header">
+              <header className="App-header">
 
                   {
                     !this.state.pensamiento && 
