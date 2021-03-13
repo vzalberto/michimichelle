@@ -132,7 +132,8 @@ y yo le contestaré`}
         );
       } 
       else if (this.state.pastillas) {
-        const ahora = Date.now()
+        {/* Datos */}
+        const ahora = Date.now();
         const jueves = [
           {
             nombre: 'Omeprazol',
@@ -197,6 +198,40 @@ y yo le contestaré`}
             a_que_hora: ahora,
           },
         ];
+        const sabado = [
+          {
+            nombre: 'Omeprazol',
+            llevamos: 0,
+            faltan: 1,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Amoxiclav',
+            llevamos: 0,
+            faltan: 2,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Mucosolvan (doble felina)',
+            llevamos: 0,
+            faltan: 3,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Nutribound',
+            llevamos: 0,
+            faltan: 4,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Guayaneumol (doble felina)',
+            llevamos: 0,
+            faltan: 1,
+            a_que_hora: ahora,
+          },
+        ];
+
+        {/* Presentación de datos */}
         const renderizaDia = (medicina) => {
           return (
             <div className={"medicina"}>
@@ -211,23 +246,45 @@ y yo le contestaré`}
               </div>
             </div>
           );
-        }
+        };
+
+        {/* Obtención de datos? */ }
+
+        {/* Arreglo de datos */}
+        const medicinas = [
+          {lista: sabado, fecha: 'Sabado 13M'}, 
+          {lista: viernes, fecha: 'Viernes 12M'},
+          {lista: jueves, fecha: 'Jueves 11M'},
+        ];
+
         return (
           <div className="App" onClick={this.cualesPastillas} style={{backgroundColor: '#3E0940'}}>
-            <div className="lasDelDia">
-              <h1 style={{color:'#df1f89'}}>
-                Viernes 12M
-              </h1>
-              {viernes.map(e=>renderizaDia(e))}
-            </div>
 
-            <div className="lasDeAyer">
-              <h1>
-                Jueves 11M
-              </h1>
-              {jueves.map(e=>renderizaDia(e))}
-            </div>
+            {/* HIGHER ORDER COMPONENT */}
+            {medicinas.map((dia, index) => {
+              if (index == 0){
+                return (
+                  <div className="lasDelDia">
+                    <h1 style={{color:'#df1f89'}}>
+                      {dia.fecha}
+                    </h1>
+                    {dia.lista.map(e=>renderizaDia(e))}
+                  </div>
+                )
+              }
+              else {
+                return (
+                  <div className="lasDeAyer">
+                    <h1>
+                      {dia.fecha}
+                    </h1>
+                    {dia.lista.map(e=>renderizaDia(e))}
+                  </div>
+                )
+              }
+            })}
 
+            {/* HTML estático para recordar de dónde venimos */}
             <div className="lasDeAyer">
               <h1>
                 Miércoles 10M
@@ -270,6 +327,7 @@ y yo le contestaré`}
               </div>
             </div>
 
+            {/* Botón de regreso */}
             <span
               role='img'
               className="emoji backButton" 
