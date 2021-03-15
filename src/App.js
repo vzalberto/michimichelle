@@ -238,14 +238,40 @@ y yo le contestaré`}
           },
           {
             nombre: 'Amoxiclav',
+            llevamos: 2,
+            faltan: 0,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Mucosolvan (doble felina)',
+            llevamos: 3,
+            faltan: 0,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Nutribound',
+            llevamos: 2,
+            faltan: 2,
+            a_que_hora: ahora,
+          },
+        ];
+        const lunes = [
+          {
+            nombre: 'Omeprazol',
+            llevamos: 1,
+            faltan: 0,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Amoxiclav',
             llevamos: 1,
             faltan: 1,
             a_que_hora: ahora,
           },
           {
             nombre: 'Mucosolvan (doble felina)',
-            llevamos: 2,
-            faltan: 1,
+            llevamos: 1,
+            faltan: 2,
             a_que_hora: ahora,
           },
           {
