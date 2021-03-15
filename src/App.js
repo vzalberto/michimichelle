@@ -206,14 +206,14 @@ y yo le contestaré`}
           },
           {
             nombre: 'Amoxiclav',
-            llevamos: 1,
-            faltan: 1,
+            llevamos: 2,
+            faltan: 0,
             a_que_hora: ahora,
           },
           {
             nombre: 'Mucosolvan (doble felina)',
-            llevamos: 1,
-            faltan: 2,
+            llevamos: 3,
+            faltan: 0,
             a_que_hora: ahora,
           },
           {
@@ -224,8 +224,34 @@ y yo le contestaré`}
           },
           {
             nombre: 'Último Guayaneumol (doble felina)',
-            llevamos: 0,
+            llevamos: 1,
+            faltan: 0,
+            a_que_hora: ahora,
+          },
+        ];
+        const domingo = [
+          {
+            nombre: 'Omeprazol',
+            llevamos: 1,
+            faltan: 0,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Amoxiclav',
+            llevamos: 1,
             faltan: 1,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Mucosolvan (doble felina)',
+            llevamos: 2,
+            faltan: 1,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Nutribound',
+            llevamos: 1,
+            faltan: 3,
             a_que_hora: ahora,
           },
         ];
@@ -246,6 +272,7 @@ y yo le contestaré`}
           );
         };
         const medicinas = [
+          {lista: domingo, fecha: 'Domingo 14M'}, 
           {lista: sabado, fecha: 'Sabado 13M'}, 
           {lista: viernes, fecha: 'Viernes 12M'},
           {lista: jueves, fecha: 'Jueves 11M'},
