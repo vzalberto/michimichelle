@@ -281,6 +281,32 @@ y yo le contestaré`}
             a_que_hora: ahora,
           },
         ];
+        const lunes = [
+          {
+            nombre: 'Omeprazol',
+            llevamos: 0,
+            faltan: 1,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Amoxiclav',
+            llevamos: 0,
+            faltan: 2,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Mucosolvan (doble felina)',
+            llevamos: 0,
+            faltan: 3,
+            a_que_hora: ahora,
+          },
+          {
+            nombre: 'Nutribound',
+            llevamos: 0,
+            faltan: 4,
+            a_que_hora: ahora,
+          },
+        ];
 
         const renderizaDia = (medicina) => {
           return (
@@ -298,6 +324,7 @@ y yo le contestaré`}
           );
         };
         const medicinas = [
+          {lista: martes, fecha: 'Martes 16M'}, 
           {lista: lunes, fecha: 'Lunes 15M'}, 
           {lista: domingo, fecha: 'Domingo 14M'}, 
           {lista: sabado, fecha: 'Sabado 13M'}, 
