@@ -298,6 +298,7 @@ y yo le contestaré`}
           );
         };
         const medicinas = [
+          {lista: lunes, fecha: 'Lunes 15M'}, 
           {lista: domingo, fecha: 'Domingo 14M'}, 
           {lista: sabado, fecha: 'Sabado 13M'}, 
           {lista: viernes, fecha: 'Viernes 12M'},
